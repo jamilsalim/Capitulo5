@@ -27,6 +27,17 @@ public class MainActivity extends AppCompatActivity {
 
         if (id == R.id.action_search)
         {
+            alerta("Clicou no SEARCH");
+            return  true;
+        }
+        else if(id == R.id.action_refresh)
+        {
+            alerta("Clicou no REFRESH");
+            return  true;
+        }
+        else if(id == R.id.action_settings)
+        {
+            alerta("Clicou no SETTINGS");
             return  true;
         }
 
@@ -35,11 +46,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void alerta(String msg)
     {
-        //Snackbar snackbar = new SnackBar();
-        //Snackbar snackbar = Snackbar
-                //.make(coordinatorLayout, "Welcome to AndroidHive", Snackbar.LENGTH_LONG);
-
-        //snackbar.show();
-        //Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
     }
 }
